@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter,faGithub,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 import axios from 'axios';
+import { url } from '../constant';
 
 const Footer = () => {
   const [data,setData]=useState({name:'',email:'',phoneno:'',query:''});
@@ -10,10 +11,9 @@ const Footer = () => {
     setData({...data,[name]:value})
   }
   const handleFooterSubmit= async(e)=>{
-    console.log(data);
     e.preventDefault();
     try{  
-      const response= await axios.post('http://localhost:3000/user/query',data);
+      const response= await axios.post(`${url}/user/query`,data);
       if(response.status == 200){
         setData({name:'',email:'',phoneno:'',query:''});
         alert('query submited successfully');

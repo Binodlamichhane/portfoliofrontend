@@ -43,7 +43,7 @@ function Blog() {
   const blogapi = async () => {
     const response = await axios.get(`${url}/blog`);
     setBlog(response.data.data);
-    console.log(response.data.data);
+ 
   };
   const handleSubmit = async (e, id) => {
     e.preventDefault();
@@ -59,7 +59,7 @@ function Blog() {
       const response = await axios.post(`${url}/blog/comment`, data, {
         withCredentials: true,
       });
-      console.log("binod ji", response.status);
+      
       if (response.status == 200) {
         setComment("");
         setIsFocus(false);
@@ -85,7 +85,7 @@ function Blog() {
         notify();
       }
       // alert("fuck the commnet");
-      console.log("binoderror", error.response.status);
+   
     }
   };
   useEffect(() => {
@@ -213,137 +213,3 @@ function Blog() {
 }
 
 export default Blog;
-
-{
-  /* <div className=' binod  section9 '>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div  className=' binod  section1'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div> */
-}
-
-{
-  /* <div  className=' binod  section2' onClick={handleClick}>
-            <div className={`border border-black rounded-2xl p-4 m-4 ${clicked?' w-full bg-slate-300' :'w-1/2 bg-slate-50'}`}>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' text-2xl'>Intersection Observer</b>
-            </div>
-         <div className='p-2'>
-         
-         <p className={`${clicked?'':'line-clamp-2 text-ellipsis'} text-justify`}> Today I learn about intersection observer and how it works.Intersection Observer is used to load element only when it is entering the viewport or completely loaded to viewport.We have to create observer that observe the element.some code relate to intersection observer 
-         <pre><code> 
-            {`  export const  blogobserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-    console.log(entry.target);
-    if(entry.isIntersecting){
-        entry.target.classList.toggle('animate-bloganimi');
-        entry.target.classList.remove('');
-    }
-    });
-  },{
-    threshold:1
-  });`}
-      </code></pre>
-       
-
-         </p>
-         <button  className=' bg-slate-300 h-fit p-3 w-fit border rounded-xl'>Readmore</button>
-
-         </div>
-        </div>
-            </div> */
-}
-{
-  /* <div  className=' binod   section3 '>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div className=' binod  section4'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div className=' binod  section5'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div className=' binod  section6'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div className=' binod  section7'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div>
-            <div className=' binod  section8'>
-            <div className='border border-black rounded-2xl p-4 m-4 w-1/4 '>
-            <div className='flex justify-end'><small>{date}</small></div>
-            <div className='flex justify-center'>
-            <b className=' '>BlogTitle</b>
-            </div>
-         <div className='p-2'>
-         <p className=' line-clamp-2 text-ellipsis'>This is the first blog on this website from my side this is it and all.</p>
-
-         </div>
-        </div>
-            </div> */
-}

@@ -19,11 +19,11 @@ function Header() {
     try{
       const respose= await axios.get(`${url}/user/verify`,{withCredentials: true,});
       if(respose.status==200){
-        console.log('binod is logged in')
+        
         setloggedstatus(true)
       }
     }catch(error){
-      console.log('biinod is logoute');
+      
       setloggedstatus(false)
     }
     }
@@ -40,9 +40,9 @@ function Header() {
   const handleLogOut=async()=>{
     if(confirm('are you sure to logged out')){
       const response= await axios.get(`${url}/user/expire`,{withCredentials:true});
-      console.log('hey',response);
+
       if(response.status==200){
-        console.log('successfully logout');
+        
         checkloginstatus();
       }
     }
@@ -54,7 +54,6 @@ function Header() {
     e.preventDefault();
     const notify=()=>toast('successfully signIn',{autoClose: 1200,});
     const response = await axios.post(`${url}/user/signup`,signInForm);
-    console.log('resposedata',response.data);
     if(response.status==200){
       setSignInForm((prestate)=>({...prestate,name:'',email:'',password:'',confirmPassword:''}));
       setSignIn(false);
@@ -75,9 +74,9 @@ function Header() {
     e.preventDefault();
     try{
       const notify=()=>toast('successfully  login',{autoClose: 1200,});
-      console.log('loginform',loginform);
+      
       const response= await axios.post(`${url}/user/login`,loginform,{ withCredentials: true });
-      console.log('loginform response',response);
+  
       if(response.status==200){
         setLoginForm((prestate)=>({...prestate,email:'',password:''}))
         setLogin(false);

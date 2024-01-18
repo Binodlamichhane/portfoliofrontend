@@ -40,7 +40,7 @@ function Home() {
       };
       array1.push(coordinate);
     }
-     console.log(array1);
+  
   };
 
   const { pathname } = useLocation();
