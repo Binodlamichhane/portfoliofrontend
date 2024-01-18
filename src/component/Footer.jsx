@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter,faGithub,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import { url } from '../constant';
 import axios from 'axios';
 
@@ -55,20 +56,20 @@ function Footer() {
         </p>
         <div className="mt-2">
           
-          <a href="#" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
+          <Link to="https://www.Linkedin.com/in/binod-lamichhane-060b31228/" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link to="#" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="https://github.com/Binodlamichhane" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link to="https://github.com/Binodlamichhane" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
     </div>
   );
-};
+}
 
 export default Footer;
