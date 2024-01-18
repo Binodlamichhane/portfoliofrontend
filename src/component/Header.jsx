@@ -111,7 +111,7 @@ function Header() {
                 <Link to="/service">Service</Link>
               </li>
               <li className="border border-gray-500 rounded-lg  hover:text-orange-400 px-1 text-yellow-100">
-                <a href={"#one"}>About</a>
+                <a href={"#"}>About</a>
               </li>
               <li className="border border-gray-500 rounded-lg  hover:text-orange-400 px-1 text-yellow-100">
                 <Link to="/blog">Blog</Link>

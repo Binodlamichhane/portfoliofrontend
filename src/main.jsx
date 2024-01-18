@@ -21,10 +21,10 @@ const router=createBrowserRouter([{
   element:<Contact/>,
   errorElement:<Error/>
 },
-{
-  path:'/about',
-  element:<Footer/>
-},
+// {
+//   path:'/about',
+//   element:<Footer/>
+// },
 {
   path:'/resume',
   element:<Resume/>
