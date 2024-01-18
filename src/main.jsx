@@ -8,6 +8,7 @@ import Header from './component/Header.jsx'
 import Resume from './component/Resume.jsx'
 import Services from './component/Services.jsx'
 import Blog from './component/Blog.jsx'
+
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 const router=createBrowserRouter([{

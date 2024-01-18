@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import Header from "./Header";
-// import Footer from "./footer";
+import Footer from "./Footer";
 import bgImage from "../assets/image/background2.jpg";
 import binod from "../assets/image/binodphoto.jpg";
 import portfolio from "../assets/image/portfolioimage.jpg";
@@ -249,7 +249,7 @@ function Home() {
         </div>
       </div>
      <div className='test'>
-     {/* <Footer/> */}
+     <Footer/>
      </div>
       
     </div>
