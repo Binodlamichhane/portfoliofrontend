@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { url } from '../constant';
 import axios from 'axios';
 
-const Footer = () => {
+function Footer() {
   const [data,setData]=useState({name:'',email:'',phoneno:'',query:''});
   const handleData=(e)=>{
     let {name,value} = e.target;
