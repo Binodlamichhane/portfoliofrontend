@@ -1,6 +1,6 @@
 import { useRouteError } from "react-router-dom";
 import Header from "./Header";
-import Footer from "./footer";
+// import Footer from "./footer";
 function Error() {
     const error = useRouteError();
   return (
@@ -63,7 +63,7 @@ function Error() {
 
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

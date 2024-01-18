@@ -3,7 +3,7 @@ import React,{useEffect} from "react";
 
 import { useLocation } from 'react-router-dom';
 import Header from "./Header";
-import Footer from "./footer";
+// import Footer from "./footer";
 import profile from "../assets/image/binodphoto.jpg";
 import skillimage from "../assets/image/skillsimage.png";
 import languageimage from "../assets/image/languagesiconimage.png";
@@ -236,7 +236,7 @@ function Resume() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
