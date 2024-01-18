@@ -52,7 +52,7 @@ const Footer = () => {
         <p className="text-sm test">
           © 2023 Binod Lamichhane. All Rights Reserved.
         </p>
-        <div className="mt-2">
+        {/* <div className="mt-2">
           
           <a href="#" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} />
@@ -63,7 +63,7 @@ const Footer = () => {
           <a href="https://github.com/Binodlamichhane" className="text-gray-400 hover:text-white mx-2 test" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
     </div>
