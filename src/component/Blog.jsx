@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./Header.jsx";
-// import Footer from "./footer.jsx";
+import Footer from "./footer.jsx";
 import { blogobserver } from "./utility/animateintersection.js";
 import { url } from "../constant.js";
 import Loader from "./utility/Loader.jsx";
@@ -207,7 +207,7 @@ function Blog() {
         )}
      <ToastContainer/>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

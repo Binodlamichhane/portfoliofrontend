@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt, faRocket } from "@fortawesome/free-solid-svg-icons";
 import Header from "./Header";
-// import Footer from "./footer";
+import Footer from "./footer";
 
 function Services() {
   useEffect(()=>{
@@ -81,7 +81,7 @@ function Services() {
           <p>binod</p>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
