@@ -96,12 +96,12 @@ function Blog() {
   return (
     <div>
       <Header />
-      <div className=" w-3/4 m-auto">
+      <div className=" w-3/4  m-auto">
         {blog.length != 0 ? (
           blog.map((item) => (
             <div key={item.id} className=" binod  section2">
               <div
-                className={`border border-black rounded-2xl p-4 m-4 ${
+                className={`border border-black rounded-2xl p-4 my-4 ${
                   clicked == item._id
                     ? " w-full bg-slate-300"
                     : "w-1/2 bg-slate-50"
