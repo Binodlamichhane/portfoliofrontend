@@ -15,7 +15,6 @@ function Blog() {
   let [blog, setBlog] = useState([]);
   let [comment, setComment] = useState("");
   let [apiComment, setapiComment] = useState([]);
-  const date = new Date().toLocaleDateString();
   let [isFocus, setIsFocus] = useState(false);
   let [loader,setLoader]=useState(false);
   const animifunction = () => {
