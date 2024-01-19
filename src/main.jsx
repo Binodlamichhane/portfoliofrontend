@@ -9,9 +9,9 @@ import Resume from './component/Resume.jsx'
 import Services from './component/Services.jsx'
 import Blog from './component/Blog.jsx'
 
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { RouterProvider,createHashRouter } from 'react-router-dom'
 
-const router=createBrowserRouter([{
+const router=createHashRouter([{
   path:'/',
   element:<Home/>,
   errorElement:<Error/>
