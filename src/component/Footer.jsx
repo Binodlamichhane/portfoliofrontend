@@ -27,13 +27,13 @@ function Footer() {
  
   }
   return (
-    <div className="bg-gray-800 text-white py-4 w-full relative ">
+    <div className="bg-gray-800 text-white py-4 w-full relative " id='one'>
       <div className='flex justify-between mx-32'>
         <div><p className=' text-lg test '>Contact Me</p>
           <p className=' test'><i>From India,<br/> Noida secotor 15,C-Block 146</i></p>
           <p className='test'><i>+91 9050423437</i></p>
         </div>
-        <div><p className=' text-lg test' id='one'>Services</p>
+        <div><p className=' text-lg test' >Services</p>
           <p className=' text-cyan-700 hover:text-green-700 test'>Mobile Applicatioin</p>
           <p className=' text-cyan-700 hover:text-green-700 test '>Dynamic Website</p>
           <p className=' text-cyan-700 hover:text-green-700 test'>Static Webiste</p>
