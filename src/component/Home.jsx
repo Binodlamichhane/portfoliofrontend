@@ -1,4 +1,6 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
 import Header from "./Header";
 import Footer from "./Footer";
 import bgImage from "../assets/image/background2.jpg";
@@ -15,24 +17,20 @@ import dsaimage from "../assets/image/dsaimage.jpg";
 import mongodbimage from "../assets/image/mongodbimage.png";
 import nodejsimage from "../assets/image/nodejsimage.jpg";
 import cssimage from "../assets/image/cssimage.jfif";
-import skillbackgroundimage from '../assets/image/skillsectionbackgroundimage.jpg'
+import skillbackgroundimage from "../assets/image/skillsectionbackgroundimage.jpg";
 import { useEffect, useState } from "react";
-import { observer } from './utility/animateintersection.js';
+import { observer } from "./utility/animateintersection.js";
 
-import { url } from '../constant.js';
+import { url } from "../constant.js";
 
 function Home() {
 
-
   const {pathname}= useLocation();
   useEffect(() => {
-    const elementsToObserve = document.querySelectorAll('.test');
+    const elementsToObserve = document.querySelectorAll(".test");
     elementsToObserve.forEach((element) => {
-    observer.observe(element);
-  });   
-    // coordinateFunc();
-
- 
+      observer.observe(element);
+    });
   }, [pathname]);
 
   const circle1 = {
@@ -47,7 +45,6 @@ function Home() {
     borderRadius: "51%",
     textAlign: "center",
     lineHeight: "100px",
-
   };
   const circle2 = {
     display: "block",
@@ -60,7 +57,6 @@ function Home() {
     borderRadius: "51%",
     textAlign: "center",
     lineHeight: "100px",
-
   };
   const circle3 = {
     display: "block",
@@ -73,7 +69,6 @@ function Home() {
     borderRadius: "51%",
     textAlign: "center",
     lineHeight: "100px",
-
   };
   const circle4 = {
     display: "block",
@@ -86,7 +81,6 @@ function Home() {
     borderRadius: "51%",
     textAlign: "center",
     lineHeight: "100px",
-
   };
   const circle5 = {
     display: "block",
@@ -99,7 +93,6 @@ function Home() {
     borderRadius: "51%",
     textAlign: "center",
     lineHeight: "100px",
-
   };
   const circle6 = {
     display: "block",
@@ -125,7 +118,7 @@ function Home() {
     textAlign: "center",
     lineHeight: "100px",
   };
-  const circle8= {
+  const circle8 = {
     display: "block",
     position: "absolute",
     top: "28%",
@@ -169,14 +162,13 @@ function Home() {
             </div>
             <br />
             <br />
-            <div className=' md:mb-36'>
+            <div className=" md:mb-36">
               <p className=" text-center test">
                 I am probably the most passoniate developer you will ever get to
                 work with.If you have a greate project that need some amazing
                 skill,I'm your guy
               </p>
             </div>
-         
           </div>
         </div>
       </div>
@@ -201,68 +193,71 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" w-3/4 m-auto test" id="skill-section"  >
+      <div className=" w-3/4 m-auto test" id="skill-section">
         <p className=" text-center text-3xl mt-4">Skills</p>
-        <div className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0" style={{backgroundImage:`url(${skillbackgroundimage})`}}>
+        <div
+          className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0"
+          style={{ backgroundImage: `url(${skillbackgroundimage})` }}
+        >
           <div>
             <img
               src={`${htmlimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div >
+          <div>
             <img
               src={`${javascriptimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div >
+          <div>
             <img
               src={`${nodejsimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div >
+          <div>
             <img
               src={`${mongodbimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div >
+          <div>
             <img
               src={`${sqlimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div >
+          <div>
             <img
               src={`${reactjsimage}`}
-              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
 
           <img
-            className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
             src={`${dsaimage}`}
             // style={{ width: 100, height: 100 }}
-          /> 
+          />
           <img
-            className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
             src={`${cssimage}`}
             // style={{ width: 100, height: 100 }}
-          /> 
+          />
         </div>
       </div>
-     <div className='test'>
-     <Footer/>
-     </div>
-      
+      <div className="test">
+      <ToastContainer/>
+        <Footer />
+      </div>
     </div>
   );
 }
