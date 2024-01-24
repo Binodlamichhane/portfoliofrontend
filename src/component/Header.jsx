@@ -117,7 +117,8 @@ function Header() {
         notify();
       }
     }catch(error){
-      console.log('failed to send credential ',error);
+      const notify = () => toast(error.response.data.message, { autoClose: 1200 });
+      notify();
     }
   }
   const handleGoogleLogin=async(credential)=>{
@@ -132,9 +133,12 @@ function Header() {
         notify();
       }
     }catch(error){
-      const notify = () => toast("error in login", { autoClose: 1200 });
+      const notify = () => toast(error.response.data.message, { autoClose: 1200 });
       notify();
     }
+  }
+  const handleError=async(error)=>{
+    alert(error.message? error.message : "Something went wrong");
   }
  const location =useLocation();
   useEffect(() => {
@@ -349,6 +353,7 @@ function Header() {
                 value="SignIn"
                 size={30}
               />
+              <div><p className=" w-fit m-auto -mt-1">OR</p></div>
                  <GoogleLogin
                 onSuccess={(credentialResponse) => {
 
@@ -416,8 +421,8 @@ function Header() {
                   console.log(credentialResponse);
                   handleGoogleLogin(credentialResponse);
                 }}
-                onError={() => {
-                  console.log("Login Failed");
+                onError={(error) => {
+                  handleError(error);
                 }}
                 width={"300px"}
                 type="standard"
