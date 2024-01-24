@@ -46,8 +46,8 @@ function Resume() {
   return (
     <>
       <Header />
-      <div className=" w-3/4 flex   m-auto">
-        <div id="first-section" className=" w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
+      <div className=" w-3/4 md:flex  m-auto">
+        <div id="first-section" className=" md:w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
           <div className=" m-6 ">
             <img
               src={profile}
@@ -56,7 +56,7 @@ function Resume() {
             <div className="flex blackanimi">
               <img
                 src={skillimage}
-                className="h-7 w-7 mr-6"
+                className="h-7 w-7 md:mr-[10%]"
                 style={{ filter: "invert(100%)" }}
               />
               <p className=" font-bold text-xl text-white font-binod ">
@@ -78,7 +78,7 @@ function Resume() {
             <div className=" mt-4 flex blackanimi ">
               <img
                 src={languageimage}
-                className=" h-7 w-7 mr-6 "
+                className=" h-7 w-7 sm:mr-[10%] "
                 style={{ filter: "invert(100%)" }}
               />
               <p className=" font-bold text-xl text-white font-binod  ">
@@ -128,7 +128,7 @@ function Resume() {
             <div className=" mt-4 flex ">
               <img
                 src={interesticon}
-                className=" h-7 w-7 mr-6"
+                className=" h-7 w-7 md:mr-[10%]"
                 style={{ filter: "invert(100%)" }}
               />
               <p className=" font-bold text-xl text-white font-binod ">
@@ -159,7 +159,7 @@ function Resume() {
 
 
 
-        <div id="second-section" className=" border-r-2 w-3/4  p-10">
+        <div id="second-section" className=" border-r-2 md:w-3/4  p-10">
           <p className="border w-max text-3xl text-[#41827f] blackanimi">
             Binod Lamichhane
           </p>

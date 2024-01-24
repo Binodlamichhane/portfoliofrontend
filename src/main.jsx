@@ -10,7 +10,8 @@ import Services from "./component/Services.jsx";
 import Blog from "./component/Blog.jsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter ,useLocation} from "react-router-dom";
+import Footer from "./component/Footer.jsx";
 
 const router = createHashRouter([
   {
@@ -35,6 +36,7 @@ const router = createHashRouter([
     path: "/blog",
     element: <Blog />,
   },
+
 ]);
 const clientId =
   "68032213417-38dqh2stmdt6v4tinqsi8aknvm9kf7pe.apps.googleusercontent.com";

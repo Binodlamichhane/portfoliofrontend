@@ -104,7 +104,7 @@ function Blog() {
                 className={`border border-black rounded-2xl p-4 my-4 ${
                   clicked == item._id
                     ? " w-full bg-slate-300"
-                    : "w-1/2 bg-slate-50"
+                    :  "w-full md:w-1/2 bg-slate-50"
                 }`}
               >
                 <div className="flex justify-end">
@@ -122,7 +122,7 @@ function Blog() {
                     {item.details}
                   </p>
 
-                  <div className="flex items-center justify-between mt-5 ">
+                  <div className="md:flex items-center justify-between mt-5 ">
                     {clicked == item._id ? (
                       <button
                         onClick={() => {
@@ -145,7 +145,7 @@ function Blog() {
                       </button>
                     )}
                     {clicked == item._id ? (
-                      <div className=" flex justify-center items-center self-center bg-slate-200  p-6 rounded-md mr-1">
+                      <div className=" sm:flex justify-center items-center self-center bg-slate-200  p-6 rounded-md mr-1">
                         <p className=" w-fit mr-3">Leave a comment</p>
                         <form
                           onSubmit={(e) => {
@@ -154,7 +154,7 @@ function Blog() {
                         >
                           <input
                             className={`rounded-lg mr-3 ${
-                              clicked == item._id ? "w-[90vh]" : "w-[36vh]"
+                              clicked == item._id ? "sm:w-[90vh]" : "sm:w-[36vh]"
                             } p-2 `}
                             type="text"
                             value={comment}

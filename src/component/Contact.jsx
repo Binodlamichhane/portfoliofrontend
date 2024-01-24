@@ -11,6 +11,7 @@ import {
   faGithub,
   faFacebook,
   faTwitter,
+  faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import profile from "../assets/image/binodphoto.jpg";
 import backgroundimage from "../assets/image/contactpagebackgroundimage.jpg";
@@ -56,7 +57,7 @@ function Contact() {
               <Link to="#" className="text-zinc-600 hover:text-black  mx-2">
                 <FontAwesomeIcon
                   className=" hover:size-10"
-                  icon={faTwitter}
+                  icon={faXTwitter}
                   size="2x"
                 />
               </Link>

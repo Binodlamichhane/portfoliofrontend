@@ -16,41 +16,20 @@ import nodejsimage from "../assets/image/nodejsimage.jpg";
 import skillbackgroundimage from '../assets/image/skillsectionbackgroundimage.jpg'
 import { useEffect, useState } from "react";
 import { observer } from './utility/animateintersection.js';
-import Cookies from 'js-cookie';
+
 import { url } from '../constant.js';
 
 function Home() {
-  const coordinateFunc = () => {
-    const totalPoints = 8;
-    let array1 = [];
-    for (var i = 1; i <= totalPoints; i++) {
-      drawPoint(100, i, totalPoints);
-    }
 
-    function drawPoint(r, currentPoint, totalPoints) {
-      var theta = (Math.PI * 2) / totalPoints;
-      var angle = theta * currentPoint;
 
-      const x = r * Math.cos(angle);
-      const y = r * Math.sin(angle);
-
-      let coordinate = {
-        a: x,
-        b: y,
-      };
-      array1.push(coordinate);
-    }
-  
-  };
-
-  const { pathname } = useLocation();
+  const {pathname}= useLocation();
   useEffect(() => {
     const elementsToObserve = document.querySelectorAll('.test');
     elementsToObserve.forEach((element) => {
     observer.observe(element);
   });   
     // coordinateFunc();
-    window.scrollTo(0, 0);
+
  
   }, [pathname]);
 
@@ -132,13 +111,37 @@ function Home() {
     textAlign: "center",
     lineHeight: "100px",
   };
+  const circle7 = {
+    display: "block",
+    position: "absolute",
+    top: "28%",
+    left: "8%",
+    width: "100px",
+    height: "100px",
+    margin: "-51px",
+    borderRadius: "51%",
+    textAlign: "center",
+    lineHeight: "100px",
+  };
+  const circle8= {
+    display: "block",
+    position: "absolute",
+    top: "28%",
+    left: "8%",
+    width: "100px",
+    height: "100px",
+    margin: "-51px",
+    borderRadius: "51%",
+    textAlign: "center",
+    lineHeight: "100px",
+  };
 
   return (
     <div className="bg-zinc-600" id="outercontainer">
       <Header />
-      <div className=" flex w-3/4 m-auto border  " id="intro-section">
+      <div className=" md:flex w-3/4 m-auto border  " id="intro-section">
         <div
-          className="w-2/4  bg-cover bg-center bg-zinc-500 flex justify-center items-center rounded-r-lg test"
+          className=" md:w-2/4  bg-cover bg-center bg-zinc-500 flex justify-center items-center rounded-r-lg test"
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="w-2/4 h-2/4 test">
@@ -147,11 +150,11 @@ function Home() {
         </div>
 
         {/* */}
-        <div className=" flex justify-center items-center w-2/4 bg-zinc-600">
+        <div className=" flex justify-center items-center md:w-2/4 bg-zinc-600">
           <div>
             <br />
             <br />
-            <div className=" mt-16 test">
+            <div className=" md:mt-16 test">
               <h1 className=" text-3xl text-fuchsia-50 text-center">
                 <b>I'm Binod Lamichhane</b>
               </h1>
@@ -164,38 +167,33 @@ function Home() {
             </div>
             <br />
             <br />
-            <div>
+            <div className=' md:mb-36'>
               <p className=" text-center test">
                 I am probably the most passoniate developer you will ever get to
                 work with.If you have a greate project that need some amazing
                 skill,I'm your guy
               </p>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+         
           </div>
         </div>
       </div>
       <div className=" w-3/4 m-auto test" id="porjects-section">
         <p className=" text-3xl text-center m-4">Projects</p>
-        <div className="flex  justify-between">
-          <div className="w-1/4 h-1/4 border rounded-md hover:opacity-30">
+        <div className=" md:flex justify-between">
+          <div className=" md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${mobileapp}`} />
             <p className=" text-center">Amazon Clone</p>
           </div>
-          <div className="w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md">
             <img src={`${portfolio}`} />
             <p className=" text-center">Portfolio</p>
           </div>
-          <div className="w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md">
             <img src={`${cardgame}`} />
             <p className=" text-center">flipcard game</p>
           </div>
-          <div className="w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md">
             <img src={`${ecommerce}`} />
             <p className=" text-center">Ecommercesite</p>
           </div>
