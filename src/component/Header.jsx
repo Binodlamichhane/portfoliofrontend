@@ -153,7 +153,7 @@ function Header() {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [location]);
+  }, [location,location.pathname]);
   return (
     <>
       <div className=" w-full h-20 flex sticky top-0 bg-zinc-600  z-20 ">
