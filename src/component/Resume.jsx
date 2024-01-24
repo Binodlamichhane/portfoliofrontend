@@ -159,7 +159,7 @@ function Resume() {
 
 
 
-        <div id="second-section" className=" border-r-2 md:w-3/4  p-10">
+        <div id="second-section" className=" border-r-2 md:w-3/4  md:p-10">
           <p className="border w-max text-2xl md:text-3xl text-[#41827f] blackanimi">
             Binod Lamichhane
           </p>

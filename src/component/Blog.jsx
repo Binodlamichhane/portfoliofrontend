@@ -96,7 +96,7 @@ function Blog() {
   return (
     <div>
       <Header />
-      <div className=" w-3/4  m-auto">
+      <div className=" md:w-3/4  m-auto">
         {blog.length != 0 ? (
           blog.map((item) => (
             <div key={item.id} className=" binod  section2">
@@ -122,14 +122,14 @@ function Blog() {
                     {item.details}
                   </p>
 
-                  <div className="md:flex items-center justify-between mt-5 ">
+                  <div className=" md:flex items-center justify-between mt-5 ">
                     {clicked == item._id ? (
                       <button
                         onClick={() => {
                           handleClick(item._id);
                           setIsFocus(false);
                         }}
-                        className=" bg-red-500 h-fit p-3 w-fit self-center  rounded-xl "
+                        className="my-2 md:my-0 bg-red-500 h-fit p-3 w-fit self-center  rounded-xl "
                       >
                         hide data
                       </button>

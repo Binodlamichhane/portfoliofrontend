@@ -17,15 +17,15 @@ function Services() {
             <b className=" text-xl text-violet-800 my-5">Mobility</b>
           </div>
           <div className="">
-            <div className="flex justify-center">
-              <b className=" text-lg">
+            <div className="flex justify-center ">
+              <b className="  text-lg border">
                 <FontAwesomeIcon icon={faMobileAlt} color="red" /> Elevate Your
                 Business with Innovative Mobile Solutions
                 <FontAwesomeIcon icon={faRocket} color="blue" />
               </b>
             </div>
             <div className="flex justify-center text-center">
-              <p className=" clear-end w-3/4 ">
+              <p className=" clear-end text-justify ">
                 Are you ready to redefine your brand's digital presence? Meet
                 Me, your gateway to cutting-edge mobile application development.
               </p>
@@ -33,8 +33,9 @@ function Services() {
             <div className="flex justify-center">
               <b>Functionality</b>
             </div>
-            <ol className=" list-disc">
-              <li className=" w-3/4  m-auto">
+            <div className="flex justify-center">
+            <ol className=" list-disc text-justify w-3/4">
+              <li className="  m-auto">
                 <b>Sleek & intitive Disign</b>
                 <p>
                   Our app boasts a user-friendly interface that captivates users
@@ -42,7 +43,7 @@ function Services() {
                   seamless and engaging experience.
                 </p>
               </li>
-              <li className=" w-3/4 m-auto">
+              <li className="  m-auto">
                 <b>Poserful Functionality</b>
                 <p>
                   From essential functionalities to advanced features, Our team
@@ -51,7 +52,7 @@ function Services() {
                   customer expectations.
                 </p>
               </li>
-              <li className=" w-3/4  m-auto">
+              <li className="   m-auto">
                 <b>Cross Platform Compability</b>
                 <p>
                   {" "}
@@ -60,7 +61,7 @@ function Services() {
                   maximizing your market reach.
                 </p>
               </li>
-              <li className=" w-3/4  m-auto">
+              <li className="  m-auto">
                 <b>Scalability & Future Proofing</b>
                 <p>
                   Designed for growth and scales with your business. We
@@ -69,6 +70,7 @@ function Services() {
                 </p>
               </li>
             </ol>
+            </div>
           </div>
         </div>
 
