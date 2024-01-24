@@ -103,9 +103,11 @@ function Header() {
   const handleGoogleSignin=async(credential)=>{
     try{
       
-      const notify = () => toast("successfully  signup", { autoClose: 1200 });
+      
       const response = await axios.post(`${url}/user/googleSignIn`,{credential:credential.credential},{withCredentials:true})
       if (response.status == 200) {
+        const notify = () => toast(response.data.message, { autoClose: 1200 });
+        notify();
         setSignInForm((prestate) => ({
           ...prestate,
           name: "",
@@ -113,8 +115,9 @@ function Header() {
           password: "",
           confirmPassword: "",
         }));
+        
         setSignIn(false);
-        notify();
+       
       }
     }catch(error){
       const notify = () => toast(error.response.data.message, { autoClose: 1200 });
