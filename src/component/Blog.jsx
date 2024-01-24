@@ -176,9 +176,9 @@ function Blog() {
                   {clicked == item._id ? (
                     <ol className=" relative left-1/2 list-disc mt-4 w-1/2 ">
                       {loader&&<div className=" relative -top-48"><Loader/></div>}
-                      <div className=" font-bold text-2xl ">
+                      <div className=" font-bold md:text-2xl ">
                         Comments({apiComment.length})
-                        <p className=" border-t-2 w-full mb-2 border-black"></p>
+                        <p className=" border-t-2 md:w-full mb-2 border-black"></p>
                       </div>
                       {apiComment.map((items) => (
                         <li

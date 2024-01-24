@@ -151,10 +151,10 @@ function Header() {
     <>
       <div className=" w-full h-20 flex sticky top-0 bg-zinc-600  z-20 ">
         <div className=" w-[90%] md:w-3/4 flex m-auto justify-between items-center ">
-          <div className="h-14 w-14 rounded-full">
+          <div className=" h-14 w-14 rounded-full">
             <img src={headerimg} className=" h-14 w-16 rounded-full" />
           </div>
-          <div className=" w-2/4  min-w-60  ">
+          <div className=" w-2/4  sm:min-w-60  ">
             <ul className=" justify-between hidden md:flex ">
               <li className="border border-gray-500 rounded-lg hover:text-orange-400 px-1 text-yellow-100">
                 <Link to="/">Home</Link>
@@ -176,7 +176,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className=" flex">
             {loggedStatus ? (
               <button
                 onClick={() => {
@@ -208,11 +208,11 @@ function Header() {
               signIn
             </button>
           </div>
-         <div className=" md:hidden">
+         <div className=" md:hidden ml-1">
           <FontAwesomeIcon onClick={()=>{showNavigation(!navigation)}}  icon={faList} />
         </div>
           
-{navigation && <div onClick={()=>{showNavigation(!navigation)}} className=" absolute  w-[600px] h-[200vh] bg-black opacity-70"></div>}
+{navigation && <div onClick={()=>{showNavigation(!navigation)}} className=" absolute w-[100%] h-[100%] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
 {navigation &&<aside id="default-sidebar" class="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
