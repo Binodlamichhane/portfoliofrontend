@@ -185,10 +185,10 @@ function Blog() {
                           key={items._id}
                           className="border rounded-md p-2 mb-2  bg-neutral-100"
                         >
-                          <div className=" text-wrap  mb-3">
-                            <b>{items.userId?.name} </b>{" "}
+                          <div className=" md:flex justify-between  mb-3">
+                            <b>{items.userId?.name} </b>
                             <small className=" ml-5">
-                              ( {item.createdAt?.split("T")[0]})
+                              ({item.createdAt?.split("T")[0]})
                             </small>
                           </div>{" "}
                           -{items.comment}
