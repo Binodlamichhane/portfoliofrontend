@@ -11,8 +11,10 @@ import htmlimage from "../assets/image/htmlimage.png";
 import javascriptimage from "../assets/image/javascriptimage.png";
 import reactjsimage from "../assets/image/reactjsimage.jpg";
 import sqlimage from "../assets/image/sqlimage.png";
+import dsaimage from "../assets/image/dsaimage.jpg";
 import mongodbimage from "../assets/image/mongodbimage.png";
 import nodejsimage from "../assets/image/nodejsimage.jpg";
+import cssimage from "../assets/image/cssimage.jfif";
 import skillbackgroundimage from '../assets/image/skillsectionbackgroundimage.jpg'
 import { useEffect, useState } from "react";
 import { observer } from './utility/animateintersection.js';
@@ -201,49 +203,60 @@ function Home() {
       </div>
       <div className=" w-3/4 m-auto test" id="skill-section"  >
         <p className=" text-center text-3xl mt-4">Skills</p>
-        <div className=" relative w-[501px] h-[501px] mx-auto my-[75px]  rounded-full animate-spin test z-0" style={{backgroundImage:`url(${skillbackgroundimage})`}}>
-          <div style={circle1}>
+        <div className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0" style={{backgroundImage:`url(${skillbackgroundimage})`}}>
+          <div>
             <img
               src={`${htmlimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div style={circle2}>
+          <div >
             <img
               src={`${javascriptimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div style={circle3}>
+          <div >
             <img
               src={`${nodejsimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div style={circle4}>
+          <div >
             <img
               src={`${mongodbimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 '
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div style={circle5}>
+          <div >
             <img
               src={`${sqlimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
-          <div style={circle6}>
+          <div >
             <img
               src={`${reactjsimage}`}
-              style={{ width: 100, height: 100, borderRadius: "50%" }}
+              className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+              // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
 
-          {/* <img
-            className=" origin-center absolute translate-x-20  rounded-full"
-            src={`${sqlimage}`}
-            style={{ width: 100, height: 100 }}
-          />  */}
+          <img
+            className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+            src={`${dsaimage}`}
+            // style={{ width: 100, height: 100 }}
+          /> 
+          <img
+            className=' w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2'
+            src={`${cssimage}`}
+            // style={{ width: 100, height: 100 }}
+          /> 
         </div>
       </div>
      <div className='test'>
