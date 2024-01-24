@@ -160,7 +160,7 @@ function Resume() {
 
 
         <div id="second-section" className=" border-r-2 md:w-3/4  p-10">
-          <p className="border w-max text-3xl text-[#41827f] blackanimi">
+          <p className="border w-max text-2xl md:text-3xl text-[#41827f] blackanimi">
             Binod Lamichhane
           </p>
           <div className="flex  mt-3 blackanimi">
@@ -177,9 +177,9 @@ function Resume() {
           </div>
 
           <div id="second-part-contact-details" className=" w-full border bg-slate-400 flex flex-wrap p-5 rounded-md mt-2 blackanimi">
-            <div className=" flex mr-7 py-1 ">
+            <div className=" flex md:mr-7 py-1 ">
               <img src={emailicon} className=" h-5 w-5  mr-[2px]  " />
-              <p>binodlamichhane9866@gmail.com</p>
+              <p className=" break-all">binodlamichhane9866@gmail.com</p>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={mobileicon} className=" h-5 w-5 mr-[2px]  " />
@@ -189,13 +189,13 @@ function Resume() {
               <img src={locationicon} className=" h-5 w-5 mr-[2px]  " />
               <p>noida,sector 15</p>
             </div>
-            <div className=" flex mr-7 py-1">
+            <div className=" flex md:mr-7 py-1">
               <img src={linkedicon} className=" h-5 w-5 mr-[2px] " />
-              <p>linked.com/in/binodlamichhane</p>
+              <p className=" break-all">linked.com/in/binodlamichhane</p>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={githubicon} className=" h-6 w-6 mr-[2px]" />
-              <p>github.com/in/binodlamichhane</p>
+              <p className=" break-all">github.com/in/binodlamichhane</p>
             </div>
           </div>
           <div id="third-part-experience ">

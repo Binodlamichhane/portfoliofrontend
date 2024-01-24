@@ -208,8 +208,8 @@ function Header() {
               signIn
             </button>
           </div>
-         <div className=" md:hidden ml-1">
-          <FontAwesomeIcon onClick={()=>{showNavigation(!navigation)}}  icon={faList} />
+         <div className=" md:hidden ml-3">
+          <FontAwesomeIcon className=" text-xl" onClick={()=>{showNavigation(!navigation)}} size="20px" icon={faList} />
         </div>
           
 {navigation && <div onClick={()=>{showNavigation(!navigation)}} className=" absolute w-[100%] h-[100%] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}

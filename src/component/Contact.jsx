@@ -31,7 +31,7 @@ function Contact() {
     <div>
       <Header />
       <div
-        className="h-[90vh] w-3/4 m-auto border flex justify-center items-center test"
+        className="h-[90vh] md:w-3/4 m-auto border flex justify-center items-center test"
         style={{ backgroundImage: `url(${backgroundimage})` }}
       >
         <div className="  border flex justify-center h-[60vh]  w-4/5 items-center  rounded-2xl  bg-slate-200 opacity-70">
