@@ -155,12 +155,12 @@ function Header() {
   }, [location,location.pathname]);
   return (
     <>
-      <div className=" w-full h-20 flex sticky top-0 bg-zinc-600  z-20 ">
-        <div className=" w-[90%] md:w-3/4 flex m-auto justify-between items-center ">
-          <div className=" h-14 w-14 rounded-full">
+      <div className=" w-full h-20  flex sticky top-0 bg-zinc-600  z-20 ">
+        <div className=" w-[100%]  md:px-0 md:w-3/4 flex m-auto  justify-between items-center ">
+          <div className=" h-14 w-14 rounded-full ml-3 md:ml-0">
             <img src={headerimg} className=" h-14 w-16 rounded-full" />
           </div>
-          <div className=" w-1/3 md:w-2/4 md:min-w-60  ">
+          <div className=" w-1/4 md:w-2/4 md:min-w-60  ">
             <ul className=" justify-between  hidden md:flex ">
               <li className="border border-gray-500 rounded-lg hover:text-orange-400 px-1 text-yellow-100">
                 <Link to="/">Home</Link>
@@ -214,11 +214,11 @@ function Header() {
               signIn
             </button>
           </div>
-         <div className=" md:hidden ">
+         <div className=" md:hidden mr-3 md:mr-0">
           <FontAwesomeIcon className=" text-xl" onClick={()=>{showNavigation(!navigation)}} size="20px" icon={faList} />
         </div>
           
-{navigation && <div onTouchStart={()=>{showNavigation(!navigation)}} className=" absolute w-[100vw] h-[200vh] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
+{navigation && <div onTouchStart={()=>{showNavigation(!navigation)}} className=" absolute w-[90vw] h-[200vh] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
 {navigation &&<aside id="default-sidebar" class="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">

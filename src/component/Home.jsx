@@ -132,7 +132,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-zinc-600" id="outercontainer">
+    <div className="bg-zinc-600" id="outercontainer border">
       <Header />
       <div className=" md:flex w-3/4 m-auto border  " id="intro-section">
         <div
