@@ -30,8 +30,8 @@ function Footer() {
     <div id='one' className="bg-gray-800 text-white py-4 w-full relative " >
       <div className='md:flex  md:justify-between  md:mx-32'>
         <div><p className=' text-lg test text-center '>Contact Me</p>
-          <p className=' test text-center'><i>From India,<br/> Noida secotor 15,C-Block 146</i></p>
-          <p className='test text-center'><i>+91 9050423437</i></p>
+          <p className=' test text-center'><i>From India,<br/> Noida secotor 15,A-Block 225</i></p>
+          <Link to='tel:9050423437'><p className='test text-center'><i>+91 9050423437</i></p></Link>
         </div>
         <div><p className=' text-lg test text-center '  >Services</p>
           <Link to='/service#mobility'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Mobile Applicatioin</p></Link>

@@ -178,7 +178,7 @@ function Resume() {
           <div id="second-part-contact-details" className=" w-full border bg-slate-400 flex flex-wrap p-5 rounded-md mt-2 blackanimi">
             <div className=" flex md:mr-7 py-1 ">
               <img src={emailicon} className=" h-5 w-5  mr-[2px]  " />
-              <Link to='https://mailto:binodlamichhane9866@gmail.com'><p className=" break-all">binodlamichhane9866@gmail.com</p></Link>
+              <Link to='mailto:binodlamichhane9866@gmail.com'><p className=" break-all">binodlamichhane9866@gmail.com</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={mobileicon} className=" h-5 w-5 mr-[2px]  " />
