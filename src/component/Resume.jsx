@@ -46,8 +46,8 @@ function Resume() {
   return (
     <>
       <Header />
-      <div className=" mx-7 md:w-3/4 md:flex  m-auto">
-        <div id="first-section" className=" md:w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
+      <div className="  md:w-3/4 md:flex  m-auto">
+        <div id="first-section" className=" mx-7 md:mx-0 md:w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
           <div className=" m-6 ">
             <img
               src={profile}
@@ -159,8 +159,8 @@ function Resume() {
 
 
 
-        <div id="second-section" className=" border-r-2 md:w-3/4  md:p-10">
-          <p className="border w-max text-2xl md:text-3xl text-[#41827f] blackanimi">
+        <div id="second-section" className=" mx-7 md:mx-0 md:border-r-2 md:w-3/4  md:p-10">
+          <p className=" w-max text-2xl md:text-3xl text-[#41827f] blackanimi">
             Binod Lamichhane
           </p>
           <div className="flex  mt-3 blackanimi">
