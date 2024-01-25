@@ -283,7 +283,7 @@ function Header() {
        
           {signin && (
             <form
-              className="absolute top-[15vh] left-[10vw] md:left-[35vw] border  p-4 md:p-8 md:px-11 rounded-lg bg-slate-200"
+              className="absolute top-[15vh] ml-3 sm:left-[35%] border mr-3  p-4 md:p-8 md:px-11 rounded-lg bg-slate-200"
               onSubmit={handlSubmiteSignUp}
             >
               <label
