@@ -182,7 +182,7 @@ function Resume() {
             </div>
             <div className=" flex mr-7 py-1">
               <img src={mobileicon} className=" h-5 w-5 mr-[2px]  " />
-              <Link to='https://tel:9050423437'><p>9050423437</p></Link>
+              <Link to='tel:9050423437'><p>9050423437</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={locationicon} className=" h-5 w-5 mr-[2px]  " />
