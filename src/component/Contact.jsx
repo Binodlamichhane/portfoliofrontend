@@ -10,7 +10,6 @@ import {
   faLinkedinIn,
   faGithub,
   faFacebook,
-  faTwitter,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import profile from "../assets/image/binodphoto.jpg";

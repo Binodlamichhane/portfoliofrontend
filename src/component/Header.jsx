@@ -6,7 +6,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/image/logo-image.jpg";
 import headerimg from "../assets/image/headerimage.jpg";
 import { url } from "../constant";
 function Header() {
