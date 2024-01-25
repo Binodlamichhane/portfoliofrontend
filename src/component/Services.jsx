@@ -3,11 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileAlt, faRocket } from "@fortawesome/free-solid-svg-icons";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useLocation } from "react-router-dom";
 
 function Services() {
+  const location =useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    const hash= location.hash.replace('#','');
+    console.log('locaiton',location);
+    const targetElement=document.getElementById(hash)
+    if(targetElement){
+      console.log('ragetee',targetElement);
+      targetElement.scrollIntoView({behavior:'smooth'})
+    }
+    else{
+      window.scrollTo(0, 0);
+    }
+  
+  }, [location.pathname]);
   return (
     <>
       <Header />
@@ -74,7 +86,7 @@ function Services() {
           </div>
         </div>
 
-        <div id="Portfolio">
+        <div id="portfolio">
           <div className="flex justify-center">
             <b className="border text-xl text-violet-800 my-5">Portfolio Website</b>
           </div>
@@ -104,10 +116,7 @@ function Services() {
 
         </div>
 
-
-
-
-        <div id="Dynamic Website">
+        <div id="dynamicWebsite">
           <div className="flex justify-center">
             <b className="border text-xl text-violet-800 my-5">Dynamic Website</b>
           </div>

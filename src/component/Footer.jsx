@@ -34,10 +34,10 @@ function Footer() {
           <p className='test text-center'><i>+91 9050423437</i></p>
         </div>
         <div><p className=' text-lg test text-center '  >Services</p>
-          <p className=' text-cyan-700 hover:text-green-700 test text-center'>Mobile Applicatioin</p>
-          <p className=' text-cyan-700 hover:text-green-700 test text-center'>Dynamic Website</p>
-          <p className=' text-cyan-700 hover:text-green-700 test text-center'>Static Webiste</p>
-          <p className=' text-cyan-700 hover:text-green-700 test text-center'>DataBase Management</p>
+          <Link to='/service#mobility'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Mobile Applicatioin</p></Link>
+          <Link to='/service#portfolio'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Dynamic Website</p></Link>
+          <Link to='/service#dynamicWebsite'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Static Webiste</p></Link>
+          <Link to='/service#dynamicWebsite'><p className=' text-cyan-700 hover:text-green-700 test text-center'>DataBase Management</p></Link>
         </div>
         <div className=' text-center  '><p className=' text-lg test'>Get In Touch</p>
           <form onSubmit={handleFooterSubmit}>

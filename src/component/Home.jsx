@@ -31,6 +31,7 @@ function Home() {
     elementsToObserve.forEach((element) => {
       observer.observe(element);
     });
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   const circle1 = {
