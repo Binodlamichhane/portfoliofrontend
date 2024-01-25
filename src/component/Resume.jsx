@@ -1,7 +1,7 @@
 
 import React,{useEffect} from "react";
 
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Header from "./Header";
 import Footer from "./Footer";
 import profile from "../assets/image/binodphoto.jpg";
@@ -46,7 +46,7 @@ function Resume() {
   return (
     <>
       <Header />
-      <div className=" w-3/4 md:flex  m-auto">
+      <div className=" mx-7 md:w-3/4 md:flex  m-auto">
         <div id="first-section" className=" md:w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
           <div className=" m-6 ">
             <img
@@ -135,7 +135,7 @@ function Resume() {
                 Interest
               </p>
             </div>
-            <div>
+            <div className="pb-2">
               <div className=" mt-4 flex border rounded-md blackanimi">
                 <img src={codingicon} className=" h-5 w-5 mr-4" />
                 <p className="    font-binod ">coding</p>
@@ -175,15 +175,14 @@ function Resume() {
             both front-end and back-end technologies, with a passion for
             creating scalable and efficient applications
           </div>
-
           <div id="second-part-contact-details" className=" w-full border bg-slate-400 flex flex-wrap p-5 rounded-md mt-2 blackanimi">
             <div className=" flex md:mr-7 py-1 ">
               <img src={emailicon} className=" h-5 w-5  mr-[2px]  " />
-              <p className=" break-all">binodlamichhane9866@gmail.com</p>
+              <Link to='https://mailto:binodlamichhane9866@gmail.com'><p className=" break-all">binodlamichhane9866@gmail.com</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={mobileicon} className=" h-5 w-5 mr-[2px]  " />
-              <p>9050423437</p>
+              <Link to='https://tel:9050423437'><p>9050423437</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={locationicon} className=" h-5 w-5 mr-[2px]  " />
@@ -191,11 +190,11 @@ function Resume() {
             </div>
             <div className=" flex md:mr-7 py-1">
               <img src={linkedicon} className=" h-5 w-5 mr-[2px] " />
-              <p className=" break-all">linked.com/in/binodlamichhane</p>
+              <Link to="https://www.linkedin.com/in/binod-lamichhane-060b31228/"><p className=" break-all">linked.com/in/binodlamichhane</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
               <img src={githubicon} className=" h-6 w-6 mr-[2px]" />
-              <p className=" break-all">github.com/in/binodlamichhane</p>
+              <Link to='https://github.com/Binodlamichhane/ecommercebackend'><p className=" break-all">github.com/in/binodlamichhane</p></Link>
             </div>
           </div>
           <div id="third-part-experience ">

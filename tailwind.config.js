@@ -37,6 +37,10 @@ export default {
         loader:{
           '0%':{transform:'scale(0.5)'},
           '100%':{transform:'scale(1)'}
+        },
+        spinner:{
+          '0%':{transform:'rotate(0deg)'},
+          '100%':{transform:'rotate(360deg)'}
         }
       },
       animation:{
@@ -47,7 +51,8 @@ export default {
         "textani":"textani 1s 1",
         "blackanimi":'blackanimi 1s 1',
         'bloganimi':'bloganimi 1s',
-        'loader':'loader 0.5s linear infinite alternate'
+        'loader':'loader 0.5s linear infinite alternate',
+        'spinner':' spinner 2s linear infinite alternate'
       },
       backgroundImage:{
         "contactbg":"url('/assets/image/contactpagebackgroundimage.jpg')"

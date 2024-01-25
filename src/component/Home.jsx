@@ -179,15 +179,15 @@ function Home() {
             <img src={`${mobileapp}`} />
             <p className=" text-center">Amazon Clone</p>
           </div>
-          <div className="md:w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${portfolio}`} />
             <p className=" text-center">Portfolio</p>
           </div>
-          <div className="md:w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${cardgame}`} />
             <p className=" text-center">flipcard game</p>
           </div>
-          <div className="md:w-1/4 h-1/4 border rounded-md">
+          <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${ecommerce}`} />
             <p className=" text-center">Ecommercesite</p>
           </div>
@@ -196,59 +196,59 @@ function Home() {
       <div className=" w-3/4 m-auto test" id="skill-section">
         <p className=" text-center text-3xl mt-4">Skills</p>
         <div
-          className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0"
+          className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0 rounded-md"
           style={{ backgroundImage: `url(${skillbackgroundimage})` }}
         >
           <div>
             <img
               src={`${htmlimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
               src={`${javascriptimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
               src={`${nodejsimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
               src={`${mongodbimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 "
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
               src={`${sqlimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
               src={`${reactjsimage}`}
-              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
+              className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
 
           <img
-            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
+            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
             src={`${dsaimage}`}
             // style={{ width: 100, height: 100 }}
           />
           <img
-            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2"
+            className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
             src={`${cssimage}`}
             // style={{ width: 100, height: 100 }}
           />

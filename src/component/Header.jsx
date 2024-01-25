@@ -161,8 +161,8 @@ function Header() {
           <div className=" h-14 w-14 rounded-full">
             <img src={headerimg} className=" h-14 w-16 rounded-full" />
           </div>
-          <div className=" w-2/4  sm:min-w-60  ">
-            <ul className=" justify-between hidden md:flex ">
+          <div className=" w-1/3 md:w-2/4 md:min-w-60  ">
+            <ul className=" justify-between  hidden md:flex ">
               <li className="border border-gray-500 rounded-lg hover:text-orange-400 px-1 text-yellow-100">
                 <Link to="/">Home</Link>
               </li>
@@ -215,7 +215,7 @@ function Header() {
               signIn
             </button>
           </div>
-         <div className=" md:hidden ml-3">
+         <div className=" md:hidden ">
           <FontAwesomeIcon className=" text-xl" onClick={()=>{showNavigation(!navigation)}} size="20px" icon={faList} />
         </div>
           
