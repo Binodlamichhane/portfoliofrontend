@@ -163,7 +163,7 @@ function Home() {
             <br />
             <br />
             <div className=" md:mb-36">
-              <p className=" text-center test">
+              <p className="  test text-justify">
                 I am probably the most passoniate developer you will ever get to
                 work with.If you have a greate project that need some amazing
                 skill,I'm your guy
@@ -196,7 +196,7 @@ function Home() {
       <div className=" w-3/4 m-auto test" id="skill-section">
         <p className=" text-center text-3xl mt-4">Skills</p>
         <div
-          className=" flex  flex-wrap  mx-auto  justify-center  my-8  test z-0 rounded-md"
+          className=" flex  flex-wrap  mx-auto  justify-center  my-4 mb-8  test z-0 rounded-md"
           style={{ backgroundImage: `url(${skillbackgroundimage})` }}
         >
           <div>

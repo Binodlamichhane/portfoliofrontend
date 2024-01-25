@@ -218,7 +218,7 @@ function Header() {
           <FontAwesomeIcon className=" text-xl" onClick={()=>{showNavigation(!navigation)}} size="20px" icon={faList} />
         </div>
           
-{navigation && <div onClick={()=>{showNavigation(!navigation)}} className=" absolute w-[100%] h-[100%] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
+{navigation && <div onClick={()=>{showNavigation(!navigation)}} className=" absolute w-[100vw] h-[100%] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
 {navigation &&<aside id="default-sidebar" class="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
@@ -306,7 +306,6 @@ function Header() {
                 size={30}
                 value={signInForm.name}
                 autoComplete
-                autoFocus
                 onChange={handleSignUp}
               />
               <br />
