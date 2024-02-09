@@ -163,8 +163,8 @@ function Home() {
             </div>
             <br />
             <br />
-            <div className=" md:mb-36">
-              <p className="  test text-justify">
+            <div className=" md:mb-36 md:m-5">
+              <p className=" text-[#FFE370] test text-justify">
                 I am probably the most passoniate developer you will ever get to
                 work with.If you have a greate project that need some amazing
                 skill,I'm your guy
@@ -174,28 +174,28 @@ function Home() {
         </div>
       </div>
       <div className=" w-3/4 m-auto test" id="porjects-section">
-        <p className=" text-3xl text-center m-4">Projects</p>
+        <p className=" text-[#FFE370] text-3xl text-center m-4">Projects</p>
         <div className=" md:flex justify-between">
           <div className=" md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${mobileapp}`} />
-            <p className=" text-center">Amazon Clone</p>
+            <p className=" text-center text-white">Amazon Clone</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${portfolio}`} />
-            <p className=" text-center">Portfolio</p>
+            <p className=" text-center text-white">Portfolio</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${cardgame}`} />
-            <p className=" text-center">flipcard game</p>
+            <p className=" text-center text-white">flipcard game</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             <img src={`${ecommerce}`} />
-            <p className=" text-center">Ecommercesite</p>
+            <p className=" text-center text-white">Ecommercesite</p>
           </div>
         </div>
       </div>
       <div className=" w-3/4 m-auto test" id="skill-section">
-        <p className=" text-center text-3xl mt-4">Skills</p>
+        <p className=" text-[#FFE370] text-center text-3xl mt-4">Skills</p>
         <div
           className=" flex  flex-wrap  mx-auto  justify-center  my-4 mb-8  test z-0 rounded-md"
           style={{ backgroundImage: `url(${skillbackgroundimage})` }}

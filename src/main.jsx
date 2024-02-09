@@ -4,14 +4,14 @@ import "./index.css";
 import Home from "./component/Home.jsx";
 import Error from "./component/Error.jsx";
 import Contact from "./component/Contact.jsx";
-import Header from "./component/Header.jsx";
 import Resume from "./component/Resume.jsx";
 import Services from "./component/Services.jsx";
 import Blog from "./component/Blog.jsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import Otp from "./component/Otp.jsx";
+import { RouterProvider, createHashRouter} from "react-router-dom";
 
-import { RouterProvider, createHashRouter ,useLocation} from "react-router-dom";
-import Footer from "./component/Footer.jsx";
+
 
 const router = createHashRouter([
   {
@@ -36,6 +36,10 @@ const router = createHashRouter([
     path: "/blog",
     element: <Blog />,
   },
+  {
+    path:'/otp',
+    element:<Otp/>
+  }
 
 ]);
 const clientId =

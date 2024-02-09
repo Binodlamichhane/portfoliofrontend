@@ -178,7 +178,7 @@ function Header() {
                 <Link to="/blog">Blog</Link>
               </li>
               <li className="border border-gray-500 rounded-lg hover:text-orange-400 px-1 text-yellow-100">
-                <Link to="/resume">Resume</Link>
+                <Link to="/otp">Resume</Link>
               </li>
             </ul>
           </div>
@@ -219,7 +219,7 @@ function Header() {
         </div>
           
 {navigation && <div onTouchStart={()=>{showNavigation(!navigation)}} className=" absolute w-[90vw] h-[200vh] md:w-[600px] md:h-[200vh] bg-black opacity-70"></div>}
-{navigation &&<aside id="default-sidebar" class="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full translate-x-0" aria-label="Sidebar">
+{navigation &&<aside id="default-sidebar" className="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full translate-x-0" aria-label="Sidebar">
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
          <li>

@@ -29,17 +29,17 @@ function Footer() {
   return (
     <div id='one' className="bg-gray-800 text-white py-4 w-full relative " >
       <div className='md:flex  md:justify-between  md:mx-32'>
-        <div><p className=' text-lg test text-center '>Contact Me</p>
+        <div><p className=' text-[#FFE370] text-lg test text-center '>Contact Me</p>
           <p className=' test text-center'><i>From India,<br/> Noida secotor 15,A-Block 225</i></p>
           <Link to='tel:9050423437'><p className='test text-center'><i>+91 9050423437</i></p></Link>
         </div>
-        <div><p className=' text-lg test text-center '  >Services</p>
-          <Link to='/service#mobility'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Mobile Applicatioin</p></Link>
-          <Link to='/service#portfolio'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Dynamic Website</p></Link>
-          <Link to='/service#dynamicWebsite'><p className=' text-cyan-700 hover:text-green-700 test text-center'>Static Webiste</p></Link>
-          <Link to='/service#dynamicWebsite'><p className=' text-cyan-700 hover:text-green-700 test text-center'>DataBase Management</p></Link>
+        <div><p className=' text-[#FFE370] text-lg test text-center '  >Services</p>
+          <Link to='/service#mobility'><p className=' text-[#C98AFF] hover:text-green-700 test text-center'>Mobile Applicatioin</p></Link>
+          <Link to='/service#portfolio'><p className=' text-[#C98AFF] hover:text-green-700 test text-center'>Dynamic Website</p></Link>
+          <Link to='/service#dynamicWebsite'><p className=' text-[#C98AFF] hover:text-green-700 test text-center'>Static Webiste</p></Link>
+          <Link to='/service#dynamicWebsite'><p className=' text-[#C98AFF] hover:text-green-700 test text-center'>DataBase Management</p></Link>
         </div>
-        <div className=' text-center  '><p className=' text-lg test'>Get In Touch</p>
+        <div className=' text-[#FFE370] text-center  '><p className=' text-lg test'>Get In Touch</p>
           <form onSubmit={handleFooterSubmit}>
             <input className='rounded mt-2 h-8 text-cyan-950 text-sm p-2 test' type='text' size={30} placeholder='Name' name='name' value={data.name} onChange={handleData} required/><br/>
             <input className='rounded mt-2 h-8 text-cyan-950 text-sm p-2 test' type='text' size={30} placeholder='Email' name='email' value={data.email} onChange={handleData} required /><br/>
